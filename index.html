@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>홍길동 | 프론트엔드 개발자 포트폴리오</title>
+    <meta
+      name="description"
+      content="사용자 중심 제품 경험을 설계하고 구현하는 프론트엔드 개발자 홍길동의 포트폴리오입니다."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ko_KR" />
+    <meta property="og:title" content="홍길동 | 프론트엔드 개발자 포트폴리오" />
+    <meta
+      property="og:description"
+      content="문제 정의부터 지표 개선까지 연결하는 실전형 개발 프로젝트를 소개합니다."
+    />
+    <meta property="og:image" content="assets/img/og-image.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="페이지 상단으로 이동">HONG GILDONG</a>
+        <nav aria-label="주요 섹션" class="site-nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section container" aria-labelledby="hero-title" data-reveal>
+        <!-- TODO(Hero): name, role, one-line value proposition, location, availability, CTA text/link -->
+        <p class="eyebrow">Frontend Engineer Portfolio</p>
+        <h1 id="hero-title">사용자 행동을 성과로 연결하는 프론트엔드 개발자, 홍길동</h1>
+        <p class="hero-copy">
+          복잡한 기능을 명확한 인터페이스로 단순화하고, 팀이 반복 가능한 개발 흐름을 만들며,
+          실제 지표 개선까지 책임집니다.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">대표 프로젝트 보기</a>
+          <a class="btn btn-ghost" href="#contact">연락하기</a>
+        </div>
+        <ul class="hero-meta" aria-label="기본 프로필 정보">
+          <li>기반: 서울</li>
+          <li>관심 분야: 제품 개발, 성능 최적화, 디자인 시스템</li>
+          <li>현재 상태: 프론트엔드 포지션 오픈</li>
+        </ul>
+      </section>
+
+      <section class="section container" id="about" aria-labelledby="about-title" data-reveal>
+        <!-- TODO(About): 3-4 sentence summary, strengths(3), collaboration style -->
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">문제를 정확히 정의하고, 빠르게 검증 가능한 형태로 구현합니다.</h2>
+        </div>
+        <p class="section-intro">
+          4년 동안 B2B SaaS와 커머스 환경에서 사용자 경험 개선 프로젝트를 수행했습니다. 기능 추가보다
+          "왜 이 문제가 중요한지"를 먼저 정의하고, 데이터와 피드백으로 결과를 검증하는 개발 방식을
+          선호합니다.
+        </p>
+        <div class="grid strengths" role="list" aria-label="핵심 강점">
+          <article class="card" role="listitem" data-reveal>
+            <h3>문제 구조화</h3>
+            <p>모호한 요구사항을 사용자 시나리오와 우선순위로 분해해 개발 난이도를 낮춥니다.</p>
+          </article>
+          <article class="card" role="listitem" data-reveal>
+            <h3>실행 중심 협업</h3>
+            <p>기획/디자인/백엔드와 빠른 합의를 만들기 위해 문서와 프로토타입을 함께 운영합니다.</p>
+          </article>
+          <article class="card" role="listitem" data-reveal>
+            <h3>지표 기반 개선</h3>
+            <p>릴리즈 이후 성능, 전환, 사용성 데이터를 추적해 다음 개선 액션까지 연결합니다.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills" aria-labelledby="skills-title" data-reveal>
+        <!-- TODO(Skills): languages, frameworks, tools, depth level, currently-used stack -->
+        <div class="section-heading">
+          <p class="eyebrow">Skills</p>
+          <h2 id="skills-title">제품 개발에 바로 적용 가능한 기술 스택</h2>
+        </div>
+        <div class="grid skills-grid">
+          <article class="skill-group card" data-reveal>
+            <h3>언어</h3>
+            <ul>
+              <li>TypeScript</li>
+              <li>JavaScript (ESNext)</li>
+              <li>HTML5 / CSS3</li>
+            </ul>
+          </article>
+          <article class="skill-group card" data-reveal>
+            <h3>프레임워크</h3>
+            <ul>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </article>
+          <article class="skill-group card" data-reveal>
+            <h3>도구</h3>
+            <ul>
+              <li>GitHub Actions</li>
+              <li>Jest / Testing Library</li>
+              <li>Figma / Storybook</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="projects" aria-labelledby="projects-title" data-reveal>
+        <!-- TODO(Projects):
+             Required fields per card: title, role, period, problem, solution, impact, links -->
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">문제-해결-성과가 명확한 대표 프로젝트 3선</h2>
+        </div>
+        <div class="grid projects-grid">
+          <article class="project-card card" data-reveal>
+            <header>
+              <h3>커머스 체크아웃 전환 개선</h3>
+              <p class="project-meta">Role: Frontend Lead | Period: 2024.03 - 2024.08</p>
+            </header>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>결제 단계 이탈률이 높아 전환율이 정체되어 있었습니다.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>입력 흐름 단순화, 유효성 실시간 피드백, 성능 병목 컴포넌트 리팩터링을 진행했습니다.</dd>
+              </div>
+              <div>
+                <dt>Impact</dt>
+                <dd>결제 완료율 14% 상승, LCP 2.8s에서 1.9s로 개선.</dd>
+              </div>
+            </dl>
+            <p class="project-links">
+              <a href="https://github.com/your-id/checkout-improvement" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">Demo</a>
+            </p>
+          </article>
+
+          <article class="project-card card" data-reveal>
+            <header>
+              <h3>B2B 대시보드 정보 아키텍처 개편</h3>
+              <p class="project-meta">Role: Frontend Engineer | Period: 2023.07 - 2023.12</p>
+            </header>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>핵심 지표 탐색 시간이 길고 신규 사용자 온보딩 비용이 컸습니다.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>카드 구조와 내비게이션 계층을 재설계하고 컴포넌트 재사용 규칙을 도입했습니다.</dd>
+              </div>
+              <div>
+                <dt>Impact</dt>
+                <dd>주요 지표 도달 시간 38% 단축, 고객 지원 문의 22% 감소.</dd>
+              </div>
+            </dl>
+            <p class="project-links">
+              <a href="https://github.com/your-id/b2b-dashboard" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">Demo</a>
+            </p>
+          </article>
+
+          <article class="project-card card" data-reveal>
+            <header>
+              <h3>디자인 시스템 구축 및 운영 자동화</h3>
+              <p class="project-meta">Role: Frontend Engineer | Period: 2022.10 - 2023.04</p>
+            </header>
+            <dl>
+              <div>
+                <dt>Problem</dt>
+                <dd>팀별 UI 구현 편차로 릴리즈마다 반복 QA 이슈가 발생했습니다.</dd>
+              </div>
+              <div>
+                <dt>Solution</dt>
+                <dd>토큰 기반 스타일 체계와 Storybook 문서화, 배포 자동 검증 파이프라인을 구축했습니다.</dd>
+              </div>
+              <div>
+                <dt>Impact</dt>
+                <dd>공통 UI 개발 시간 30% 단축, 시각 회귀 이슈 40% 감소.</dd>
+              </div>
+            </dl>
+            <p class="project-links">
+              <a href="https://github.com/your-id/design-system" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://example.com" target="_blank" rel="noopener noreferrer">Demo</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="experience" aria-labelledby="experience-title" data-reveal>
+        <!-- TODO(Experience): company, title, period, key achievements, tech stack -->
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">제품 성과를 만든 실무 경험</h2>
+        </div>
+        <div class="timeline" role="list">
+          <article class="timeline-item card" role="listitem" data-reveal>
+            <header>
+              <h3>ABC Tech | 프론트엔드 개발자</h3>
+              <p>2022.01 - 현재</p>
+            </header>
+            <ul>
+              <li>핵심 제품군 프론트엔드 리드로 월간 활성 사용자 20만 규모 서비스 운영</li>
+              <li>성능 예산 기준 도입으로 주요 페이지 평균 로딩 속도 27% 개선</li>
+              <li>디자인 시스템 정착으로 신규 기능 개발 리드타임 단축</li>
+            </ul>
+          </article>
+          <article class="timeline-item card" role="listitem" data-reveal>
+            <header>
+              <h3>XYZ Studio | 주니어 프론트엔드 개발자</h3>
+              <p>2020.07 - 2021.12</p>
+            </header>
+            <ul>
+              <li>React 기반 운영 도구 신규 개발 및 유지보수</li>
+              <li>테스트 코드 도입으로 배포 후 회귀 이슈 빈도 감소</li>
+              <li>디자이너와 협업해 접근성 가이드 기반 UI 개선 진행</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="contact" aria-labelledby="contact-title" data-reveal>
+        <!-- TODO(Contact): email, github, linkedin, preferred response time -->
+        <div class="section-heading">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">함께 만들 제품 이야기를 기다리고 있습니다.</h2>
+        </div>
+        <div class="contact-card card">
+          <p>
+            새로운 팀과 제품 문제를 푸는 기회를 찾고 있습니다. 아래 채널로 연락주시면 24시간 이내
+            답변드리겠습니다.
+          </p>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:you@example.com" aria-label="이메일 보내기">you@example.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/your-id" target="_blank" rel="noopener noreferrer" aria-label="GitHub 프로필 열기">https://github.com/your-id</a>
+            </li>
+            <li>
+              LinkedIn:
+              <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn 프로필 열기">https://www.linkedin.com/in/your-id</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="current-year">2026</span> 홍길동. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
