@@ -5,6 +5,9 @@
   --color-muted: #4f607b;
   --color-accent: #1e4b8d;
   --color-accent-strong: #113162;
+  --color-purple: #7c5cff;
+  --color-purple-deep: #5a3dd0;
+  --color-purple-soft: rgba(124, 92, 255, 0.16);
   --color-border: #d6dbe5;
 
   --space-2xs: 0.25rem;
@@ -24,7 +27,7 @@
   --font-body: "Noto Sans KR", "Apple SD Gothic Neo", sans-serif;
 
   --max-width: 70rem;
-  --shadow-soft: 0 16px 48px rgba(17, 49, 98, 0.08);
+  --shadow-soft: 0 16px 48px rgba(34, 28, 88, 0.1);
   --transition-fast: 180ms ease;
   --transition-normal: 280ms ease;
 }
@@ -43,6 +46,7 @@ body {
   color: var(--color-text);
   background:
     radial-gradient(circle at 12% 15%, rgba(30, 75, 141, 0.15), transparent 42%),
+    radial-gradient(circle at 76% 28%, rgba(124, 92, 255, 0.2), transparent 42%),
     radial-gradient(circle at 86% 4%, rgba(79, 96, 123, 0.16), transparent 36%),
     var(--color-bg);
   line-height: 1.6;
@@ -59,7 +63,7 @@ a {
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid rgba(30, 75, 141, 0.45);
+  outline: 3px solid rgba(124, 92, 255, 0.5);
   outline-offset: 3px;
 }
 
@@ -94,7 +98,7 @@ button:focus-visible {
   z-index: 50;
   backdrop-filter: blur(10px);
   background: rgba(244, 240, 232, 0.88);
-  border-bottom: 1px solid rgba(15, 31, 54, 0.08);
+  border-bottom: 1px solid var(--color-purple-soft);
 }
 
 .header-inner {
@@ -133,7 +137,7 @@ button:focus-visible {
 .site-nav a:hover,
 .site-nav a[aria-current="true"] {
   color: var(--color-text);
-  background: rgba(30, 75, 141, 0.12);
+  background: linear-gradient(135deg, rgba(30, 75, 141, 0.12), rgba(124, 92, 255, 0.18));
 }
 
 .eyebrow {
@@ -141,7 +145,7 @@ button:focus-visible {
   font-family: var(--font-heading);
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-accent);
+  color: var(--color-purple-deep);
   font-size: 0.82rem;
 }
 
@@ -191,13 +195,13 @@ button:focus-visible {
 }
 
 .btn-primary {
-  background: var(--color-accent);
+  background: linear-gradient(135deg, var(--color-accent), var(--color-purple));
   color: #fff;
-  box-shadow: 0 10px 22px rgba(30, 75, 141, 0.25);
+  box-shadow: 0 10px 24px rgba(90, 61, 208, 0.28);
 }
 
 .btn-primary:hover {
-  background: var(--color-accent-strong);
+  background: linear-gradient(135deg, var(--color-accent-strong), var(--color-purple-deep));
 }
 
 .btn-ghost {
@@ -206,8 +210,8 @@ button:focus-visible {
 }
 
 .btn-ghost:hover {
-  border-color: rgba(30, 75, 141, 0.4);
-  background: rgba(30, 75, 141, 0.08);
+  border-color: rgba(90, 61, 208, 0.4);
+  background: linear-gradient(135deg, rgba(30, 75, 141, 0.08), rgba(124, 92, 255, 0.14));
 }
 
 .hero-meta {
@@ -221,7 +225,7 @@ button:focus-visible {
 
 .hero-meta li {
   background: rgba(255, 255, 255, 0.6);
-  border: 1px solid rgba(30, 75, 141, 0.14);
+  border: 1px solid rgba(90, 61, 208, 0.26);
   border-radius: 999px;
   padding: 0.4rem 0.75rem;
   color: var(--color-muted);
@@ -238,6 +242,19 @@ button:focus-visible {
   font-size: clamp(1.4rem, 3vw, 2rem);
   line-height: 1.25;
   max-width: 24ch;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 3.6rem;
+  height: 0.2rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-purple));
 }
 
 .section-intro {
@@ -259,10 +276,33 @@ button:focus-visible {
 
 .card {
   background: var(--color-surface);
-  border: 1px solid var(--color-border);
+  border: 1px solid rgba(124, 92, 255, 0.22);
   border-radius: var(--radius-lg);
   padding: var(--space-lg);
   box-shadow: var(--shadow-soft);
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast),
+    border-color var(--transition-fast);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 0.2rem;
+  background: linear-gradient(90deg, var(--color-accent), var(--color-purple));
+  opacity: 0.62;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(90, 61, 208, 0.38);
+  box-shadow: 0 18px 38px rgba(66, 45, 156, 0.18);
 }
 
 .card h3 {
@@ -322,6 +362,7 @@ button:focus-visible {
 .project-links a {
   font-weight: 600;
   text-underline-offset: 3px;
+  color: var(--color-purple-deep);
 }
 
 .timeline {
@@ -343,7 +384,7 @@ button:focus-visible {
 }
 
 .site-footer {
-  border-top: 1px solid rgba(15, 31, 54, 0.1);
+  border-top: 1px solid rgba(90, 61, 208, 0.22);
   padding: var(--space-xl) 0;
   background: rgba(255, 253, 249, 0.72);
 }
